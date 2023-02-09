@@ -1,7 +1,7 @@
 {
   "name": "goit-react-hw-02-phonebook",
   "version": "0.1.0",
-  "private": false,
+  "private": true,
   "homepage": "https://dimitry995.github.io/goit-react-hw-02-phonebook/",
   "dependencies": {
     "@emotion/react": "^11.10.5",
