@@ -1,17 +1,25 @@
 const buttonAddName = document.getElementById("button4");
 buttonAddName.addEventListener('click', AddZ);
+//const buttonAddNumber = document.getElementById("button5");
+//buttonAddNumber.addEventListener('click', AddR);
 function AddZ() {
+	let randomFontColor = getRandomHexColor();
 	let targetList = document.querySelector(".list");
+	let makeItem2 = document.createElement("b");
+	makeItem2.textContent = String(input.value);
+	makeItem2.style.color = randomFontColor;
+	item.append(makeItem2);
 	let makeItem = document.createElement("li");
 	makeItem.classList.add("item");
-	makeItem.textContent = String(input.value);
-		item.append(makeItem);
-	makeItem = document.createElement("li");
-	makeItem.classList.add("item");
 	makeItem.textContent = Number(submmit.value);
+	makeItem.style.color = randomFontColor;
 	item.append(makeItem);
 }
-
-let del = document.getElementById("button6").click = function () {
-	location.reload();
+function getRandomHexColor() {
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
+}
+let del = document.getElementById("button6");
+del.addEventListener('click', reLoad);
+function reLoad() {
+	document.location.reload();
 }
