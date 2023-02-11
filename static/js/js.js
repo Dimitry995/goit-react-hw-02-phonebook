@@ -1,4 +1,5 @@
 const buttonAddName = document.getElementById("button4");
+let item = document.querySelector('.list');
 buttonAddName.addEventListener('click', AddZ);
 //const buttonAddNumber = document.getElementById("button5");
 //buttonAddNumber.addEventListener('click', AddR);
