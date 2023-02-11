@@ -1,12 +1,13 @@
 const buttonAddName = document.getElementById("button4");
 let item = document.querySelector('.list');
+let input = document.getElementById('submit');
+let submmit = document.getElementById('input');
 buttonAddName.addEventListener('click', AddZ);
 //const buttonAddNumber = document.getElementById("button5");
 //buttonAddNumber.addEventListener('click', AddR);
 function AddZ() {
 	let randomFontColor = getRandomHexColor();
-	let targetList = document.querySelector(".list");
-	let makeItem2 = document.createElement("b");
+	let makeItem2 = document.createElement("h6");
 	makeItem2.textContent = String(input.value);
 	makeItem2.style.color = randomFontColor;
 	item.append(makeItem2);
