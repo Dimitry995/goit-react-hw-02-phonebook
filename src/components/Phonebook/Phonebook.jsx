@@ -61,12 +61,12 @@ export class Phonebook extends Component {
           Contacts
         </Box>
         <Filter value={filter} changeFilter={this.changeFilter} />
-        <WrapperContacts>
+  {this.state.contacts.length > 0 && <WrapperContacts>
           <ContactsList
             contacts={filteredContacts}
             removeContact={this.removeContact}
           />
-        </WrapperContacts>
+        </WrapperContacts>}
       </WrapperPhonebook>
     );
   }
