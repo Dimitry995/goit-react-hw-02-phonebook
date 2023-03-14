@@ -16,8 +16,8 @@ export class ContactForm extends Component {
 
   state = INITIAL_STATE;
 
-  handleChangeInput = evet => {
-    const targetInput = evet.currentTarget;
+  handleChangeInput = event => {
+    const targetInput = event.currentTarget;
     this.setState({ [targetInput.name]: targetInput.value });
   };
 
